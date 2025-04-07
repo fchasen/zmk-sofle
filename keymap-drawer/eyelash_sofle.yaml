@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
-  - $$mdi:keyboard-esc$$
+  - '&escape'
   - {t: '1', h: '!', s: '!'}
   - {t: '2', h: '@', s: '@'}
   - {t: '3', h: '#', s: '#'}
@@ -30,21 +30,21 @@ layers:
   - {t: '-', h: _, s: _}
   - A
   - S
-  - D
-  - F
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - H
-  - J
-  - K
+  - {t: J, h: RIGHT GUI}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - L
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
   - {t: '[', h: '{', s: '{'}
   - {t: Z, h: Z}
   - X
-  - {t: C, h: C}
-  - {t: V, h: V}
+  - C
+  - V
   - B
   - $$mdi:arrow-right-bold$$
   - N
@@ -89,8 +89,8 @@ layers:
   - PG UP
   - HOME
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F11
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -131,6 +131,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Symbol:
+  - {t: '`', s: '~'}
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft+$
+  - Sft+%
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -139,6 +145,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+^
+  - Sft+&
+  - Sft+*
+  - Sft+(
+  - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -147,6 +158,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+_
+  - Sft+<
+  - Sft+>
+  - Sft+{
+  - Sft+}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -155,27 +171,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft++
+  - Sft+|
+  - Sft+"
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -265,3 +265,19 @@ combos:
   k: {t: Func, h: toggle}
 - p: [57, 59]
   k: $$mdi:alpha-w-box$$
+- p: [11, 12]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [62, 63]
+  k: $$mdi:arrow-up-bold$$
+- p: [62, 61]
+  k: $$mdi:arrow-left-bold$$
+- p: [0, 1]
+  k: {t: '`', s: '~'}
+- p: [39, 40]
+  k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+- p: [50, 51]
+  k: Gui+$$mdi:keyboard-tab$$
+- p: [0, 55]
+  k: {t: Func, h: toggle}
+- p: [61, 12]
+  k: {t: Func, h: toggle}
