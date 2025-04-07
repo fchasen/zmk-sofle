@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '{', h: '['}
+  - {t: \, h: '|', s: '|'}
   - {t: '-', h: _, s: _}
   - A
   - S
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
-  - '&tap_caps'
+  - {t: '[', h: '{', s: '{'}
   - {t: Z, h: Z}
   - X
   - {t: C, h: C}
@@ -52,20 +52,20 @@ layers:
   - {t: ',', h: '[', s: <}
   - {t: ., h: ']', s: '>'}
   - {t: /, h: '?', s: '?'}
-  - {t: \, h: '|', s: '|'}
+  - {t: ']', h: '}', s: '}'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: Lower, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: Nav, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: RETURN, h: RIGHT GUI}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
-  Lower:
+  Nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -195,7 +195,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Function:
+  Func:
   - '&studio_unlock'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -262,4 +262,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [55, 61]
-  k: {t: Function, h: toggle}
+  k: {t: Func, h: toggle}
+- p: [57, 59]
+  k: $$mdi:alpha-w-box$$
