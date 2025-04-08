@@ -55,7 +55,7 @@ layers:
   - {t: ']', h: '}', s: '}'}
   - $$mdi:volume-off$$
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: Gui+P, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-option$$'}
   - {t: Nav, h: toggle}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
