@@ -41,7 +41,7 @@ layers:
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
   - {t: '[', h: '{', s: '{'}
-  - {t: Z, h: Z}
+  - Z
   - X
   - C
   - V
@@ -54,15 +54,15 @@ layers:
   - {t: /, h: '?', s: '?'}
   - {t: ']', h: '}', s: '}'}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: Nav, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Gui+P, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Nav, h: toggle}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: RETURN, h: RIGHT GUI}
-  - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:arrow-left-bold$$', h: Symbol}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   Nav:
@@ -121,7 +121,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PLAY PAUSE
@@ -251,13 +251,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
@@ -277,7 +277,11 @@ combos:
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
 - p: [50, 51]
   k: Gui+$$mdi:keyboard-tab$$
-- p: [0, 55]
-  k: {t: Func, h: toggle}
-- p: [61, 12]
-  k: {t: Func, h: toggle}
+- p: [55, 56]
+  k: Func
+- p: [61, 60]
+  k: Func
+- p: [53, 54]
+  k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
+- p: [62, 48]
+  k: $$mdi:arrow-up-bold$$
