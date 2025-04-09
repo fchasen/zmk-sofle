@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
-  - '&escape'
+  - {t: '$$mdi:keyboard-esc$$', h: '`'}
   - {t: '1', h: '!', s: '!'}
   - {t: '2', h: '@', s: '@'}
   - {t: '3', h: '#', s: '#'}
@@ -272,7 +272,7 @@ combos:
 - p: [62, 61]
   k: $$mdi:arrow-left-bold$$
 - p: [0, 1]
-  k: {t: '`', s: '~'}
+  k: Ctl+C
 - p: [39, 40]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
 - p: [50, 51]
