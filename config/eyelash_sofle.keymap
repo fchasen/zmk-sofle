@@ -138,10 +138,16 @@
         compatible = "zmk,behavior-tap-dance";
         label = "Arrows";
         #binding-cells = <0>;
-        bindings = <&thumb_layer_tap 2 LEFT_ARROW>, <&tog 4>;
+        bindings = <&thumb_layer_tap 2 LEFT_ARROW>, <&nav_word 4>;
     };
 
     behaviors {
+        nav_word: nav_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <0>;
+            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
+            ignore-modifiers;
+        };
     };
 
     combos {
