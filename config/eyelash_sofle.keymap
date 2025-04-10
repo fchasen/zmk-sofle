@@ -134,6 +134,13 @@
         hold-while-undecided;
     };
 
+    arrows: arrows {
+        compatible = "zmk,behavior-tap-dance";
+        label = "Arrows";
+        #binding-cells = <0>;
+        bindings = <&thumb_layer_tap 2 LEFT_ARROW>, <&tog 4>;
+    };
+
     behaviors {
     };
 
@@ -217,7 +224,7 @@
             display-name = "Base";
         };
 
-        Nav {
+        Function {
             bindings = <
 &trans      &kp F1  &kp F2     &kp F3     &kp F4     &kp F5      &kp K_VOLUME_DOWN  &kp F6     &kp F7      &kp F8              &kp F9              &kp F10         &trans
 &trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &kp K_VOLUME_DOWN  &kp PG_UP  &kp HOME    &trans              &kp F11             &kp F12         &trans
@@ -226,7 +233,7 @@
 &kp C_MUTE  &trans  &trans     &trans     &trans     &trans      &kp K_PLAY_PAUSE   &trans     &kp K_MUTE  &trans              &trans              &trans
             >;
 
-            display-name = "Nav";
+            display-name = "Function";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -242,7 +249,7 @@
             label = "Symbol";
         };
 
-        Function {
+        Keyboard {
             bindings = <
 &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F12  &rgb_ug RGB_COLOR_HSB(0,90,46)  &rgb_ug RGB_COLOR_HSB(36,83,61)  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
 &trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans   &trans                          &trans                           &trans                          &rgb_ug RGB_BRD  &trans
@@ -252,7 +259,19 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "Func";
+            label = " Keyboard";
+        };
+
+        Nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &kp UP_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &tog 4  &trans    &trans
+            >;
+
+            label = "Nav";
         };
     };
 };
