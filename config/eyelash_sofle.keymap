@@ -41,9 +41,10 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <200>;
+        tapping-term-ms = <240>;
+        quick-tap-ms = <100>;
         flavor = "balanced";
+        hold-while-undecided;
     };
 
     escape: escape {
@@ -70,8 +71,8 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <200>;
+        tapping-term-ms = <300>;
+        quick-tap-ms = <175>;
         require-prior-idle-ms = <200>;
         flavor = "balanced";
         hold-trigger-key-positions = <7 8 9 10 11 12 25 24 23 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51>;
@@ -84,8 +85,8 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <200>;
+        tapping-term-ms = <300>;
+        quick-tap-ms = <175>;
         require-prior-idle-ms = <200>;
         flavor = "balanced";
         hold-trigger-on-release;
@@ -120,6 +121,17 @@
         flavor = "tap-preferred";
         tapping-term-ms = <135>;
         quick-tap-ms = <0>;
+    };
+
+    shiftmod: shiftmod {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Shift mod";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <300>;
+        quick-tap-ms = <175>;
+        hold-while-undecided;
     };
 
     behaviors {
@@ -194,11 +206,11 @@
 
         Base {
             bindings = <
-&autoshift GRAVE ESCAPE                 &autoshift EXCLAMATION N1   &autoshift AT N2               &autoshift HASH N3            &autoshift DOLLAR N4         &autoshift PERCENT N5              &kp UP_ARROW     &autoshift CARET N6               &autoshift AMPS N7               &autoshift ASTERISK N8         &autoshift LEFT_PARENTHESIS N9  &autoshift RIGHT_PARENTHESIS N0     &kp BACKSPACE
-&autoshift PLUS EQUAL                   &kp Q                       &kp W                          &kp E                         &kp R                        &kp T                              &kp DOWN_ARROW   &kp Y                             &kp U                            &kp I                          &kp O                           &kp P                               &autoshift PIPE BACKSLASH
-&autoshift UNDER MINUS                  &kp A                       &kp S                          &left_homerow LEFT_SHIFT D    &left_homerow LEFT_GUI F     &kp G                              &kp LEFT_ARROW   &kp H                             &right_homerow RIGHT_GUI J       &right_homerow RIGHT_SHIFT K   &kp L                           &autoshift COLON SEMI               &autoshift DOUBLE_QUOTES APOS
-&thumb_mod_tap LEFT_SHIFT LEFT_BRACKET  &kp Z                       &kp X                          &kp C                         &kp V                        &kp B                              &kp RIGHT_ARROW  &kp N                             &kp M                            &autoshift LESS_THAN COMMA     &autoshift GREATER_THAN DOT     &autoshift QUESTION FSLH            &thumb_mod_tap RIGHT_SHIFT RIGHT_BRACKET
-&kp C_MUTE                              &thumb_mod_tap LCTRL LG(C)  &thumb_mod_tap LEFT_ALT LG(V)  &thumb_layer_tap 1 BACKSPACE  &thumb_mod_tap LEFT_GUI TAB  &thumb_mod_tap LEFT_SHIFT SPACE    &kp ENTER        &thumb_mod_tap RIGHT_SHIFT SPACE  &thumb_mod_tap RIGHT_GUI RETURN  &thumb_layer_tap 2 LEFT_ARROW  &thumb_mod_tap RIGHT_ALT DOWN   &thumb_mod_tap RIGHT_CONTROL RIGHT
+&autoshift GRAVE ESCAPE            &autoshift EXCLAMATION N1   &autoshift AT N2               &autoshift HASH N3            &autoshift DOLLAR N4         &autoshift PERCENT N5         &kp UP_ARROW     &autoshift CARET N6          &autoshift AMPS N7               &autoshift ASTERISK N8         &autoshift LEFT_PARENTHESIS N9  &autoshift RIGHT_PARENTHESIS N0     &kp BACKSPACE
+&autoshift PLUS EQUAL              &kp Q                       &kp W                          &kp E                         &kp R                        &kp T                         &kp DOWN_ARROW   &kp Y                        &kp U                            &kp I                          &kp O                           &kp P                               &autoshift PIPE BACKSLASH
+&autoshift UNDER MINUS             &kp A                       &kp S                          &left_homerow LEFT_SHIFT D    &left_homerow LEFT_GUI F     &kp G                         &kp LEFT_ARROW   &kp H                        &right_homerow RIGHT_GUI J       &right_homerow RIGHT_SHIFT K   &kp L                           &autoshift COLON SEMI               &autoshift DOUBLE_QUOTES APOS
+&shiftmod LEFT_SHIFT LEFT_BRACKET  &kp Z                       &kp X                          &kp C                         &kp V                        &kp B                         &kp RIGHT_ARROW  &kp N                        &kp M                            &autoshift LESS_THAN COMMA     &autoshift GREATER_THAN DOT     &autoshift QUESTION FSLH            &shiftmod RIGHT_SHIFT RIGHT_BRACKET
+&kp C_MUTE                         &thumb_mod_tap LCTRL LG(C)  &thumb_mod_tap LEFT_ALT LG(V)  &thumb_layer_tap 1 BACKSPACE  &thumb_mod_tap LEFT_GUI TAB  &shiftmod LEFT_SHIFT SPACE    &kp ENTER        &shiftmod RIGHT_SHIFT SPACE  &thumb_mod_tap RIGHT_GUI RETURN  &thumb_layer_tap 2 LEFT_ARROW  &thumb_mod_tap RIGHT_ALT DOWN   &thumb_mod_tap RIGHT_CONTROL RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
