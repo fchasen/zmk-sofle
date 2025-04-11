@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
-  - {t: '[', h: '$$mdi:apple-keyboard-shift$$', s: '{'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Z
   - X
   - C
@@ -49,20 +49,20 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
+  - {t: ',', h: '[', s: <}
+  - {t: ., h: ']', s: '>'}
   - {t: /, h: '?', s: '?'}
-  - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
   - {t: V, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:backspace$$', h: Function}
+  - {t: Symbol, h: toggle}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-space$$
   - {t: RETURN, h: RIGHT GUI}
-  - {t: '$$mdi:arrow-left-bold$$', h: Symbol}
+  - {t: Function, h: toggle}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   Function:
@@ -121,7 +121,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PLAY PAUSE
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   ' Keyboard':
