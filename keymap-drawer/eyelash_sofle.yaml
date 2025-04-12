@@ -58,9 +58,9 @@ layers:
   - {t: V, h: '$$mdi:apple-keyboard-option$$'}
   - {t: Symbol, h: Symbol}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:keyboard-space$$
+  - '&spacedance'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - '&spacedance'
   - {t: RETURN, h: RIGHT GUI}
   - '&arrows'
   - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
