@@ -334,7 +334,7 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [62, 63]
   k: $$mdi:arrow-right-bold$$
-- p: [62, 61]
+- p: [53, 54]
   k: $$mdi:arrow-left-bold$$
 - p: [0, 1]
   k: Ctl+C
@@ -346,9 +346,9 @@ combos:
   k: ' Keyboard'
 - p: [61, 60]
   k: ' Keyboard'
-- p: [53, 54]
+- p: [53, 55]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
-- p: [62, 48]
+- p: [54, 55]
   k: $$mdi:arrow-up-bold$$
-- p: [61, 63]
+- p: [61, 62]
   k: $$mdi:arrow-down-bold$$
