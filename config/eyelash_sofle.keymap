@@ -195,7 +195,7 @@
 
         leftarrow {
             bindings = <&kp LEFT>;
-            key-positions = <62 61>;
+            key-positions = <53 54>;
         };
 
         ctrlc {
@@ -225,17 +225,17 @@
 
         cut {
             bindings = <&kp LG(X)>;
-            key-positions = <53 54>;
+            key-positions = <53 55>;
         };
 
         uparrowalt {
             bindings = <&kp UP_ARROW>;
-            key-positions = <62 48>;
+            key-positions = <54 55>;
         };
 
         downarrow {
             bindings = <&kp DOWN>;
-            key-positions = <61 63>;
+            key-positions = <61 62>;
         };
     };
 
