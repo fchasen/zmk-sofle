@@ -8,8 +8,8 @@ if BOARD_EYELASH_SOFLE_LEFT
 config ZMK_KEYBOARD_NAME
     default "Eyelash Sofle"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+#config ZMK_SPLIT_ROLE_CENTRAL
+   #default y
 
 endif # BOARD_EYELASH_SOFLE_LEFT
 
