@@ -1,9 +1,8 @@
 include:
-  - board: nrf52840_mdk_usb_dongle
-    shield: onekey
+  - board: eyelash_sofle_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: onekey
+    artifact-name: eyelash_sofle_dongle
   - board: eyelash_sofle_left
     shield: nice_view
     artifact-name: eyelash_sofle_left
